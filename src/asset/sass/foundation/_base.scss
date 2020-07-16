@@ -1,0 +1,73 @@
+/* ==========================================================================
+    Base
+    ========================================================================== */
+
+$color-default: #222;
+$color-light: #fff;
+$color-primary: #00478b;
+$color-secondary: #2b669f;
+$color-border: #9b9b9b;
+$color-orange: #fc5200;
+
+/* ==================================
+// メディアクエリ
+===================================== */
+
+@mixin pc-layout($width: 768px) {
+    @media screen and (min-width: $width) {
+        @content;
+    }
+}
+@mixin sp-layout($width: 767px) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+
+// PCの時のみ表示する
+.u-pc {
+    display: block;
+    @include pc-layout() {
+        display: none !important;
+    }
+}
+
+// spの時のみ表示する
+.u-sp {
+    display: none;
+    @include sp-layout() {
+        display: block !important;
+    }
+}
+
+body {
+    font-family: Avenir, 'Noto Serif JP', sans-serif;
+    color: $color-default;
+    line-height: 2;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    color: $color-default;
+    text-decoration: none;
+    font-size: 16px;
+}
