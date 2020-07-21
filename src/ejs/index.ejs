@@ -1,34 +1,52 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
+<meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
 
-        <%- include('./_includes/_common.ejs') %> 
+<head>
 
-        <title>Tenkue Hotel</title>
+    <%- include('./_includes/_common.ejs') %>
 
-        <!-- OGP -->
-        <%#- include('./_includes/_ogpCommon.ejs') %>
-        <%#- include('./_includes/_ogpTwitter.ejs') %>
-        <%#- include('./_includes/_ogpFacebook.ejs') %>
+    <title>Tenkue Hotel</title>
 
-    </head>
+    <!-- OGP -->
+    <%#- include('./_includes/_ogpCommon.ejs') %>
+    <%#- include('./_includes/_ogpTwitter.ejs') %>
+    <%#- include('./_includes/_ogpFacebook.ejs') %>
+
+</head>
+
 </html>
 
-    <body>
-        <%- include('./_includes/_header') %>
+<body>
+    <%- include('./_includes/_header') %>
 
-        <main>
+    <main>
 
-            <article class="p-home">
-                <div class="p-home__inner l-content-wrap-default">
-                    <!-- ここにHTMLを書いていく -->
+        <article class="p-home">
+            <div class="p-home__inner l-content-wrap-default">
+                <!-- ここにHTMLを書いていく -->
+                <h2>トラベラーのためのNo.1アプリ</h2>
+            </div>
+            <div class="parent">
+                <div class="left-index">
+                    <img src="/asset/image/img_home.jpg" alt="logo" decoding="async" class="sea-image">
                 </div>
-            </article>
-            
+                <div class="right-index">
+                    <btn class=" btn btn-new"><img src="/asset/image/email.svg" alt="logo" decoding="async"
+                            class="email-image">新規登録</btn>
 
-        </main>
+                    <btn class="btn btn-login"> <img src="/asset/image/login.svg" alt="logo" decoding="async"
+                            class="login-image">ログイン</btn>
 
-        <%- include('./_includes/_footer.ejs') %>
+                    <p>Tenkue App に登録することにより利用条約 に同意したものとみなされます。<br>プライバシーポリシーを見る。
+                    </p>
+                </div>
+            </div>
+        </article>
+    </main>
 
-    </body>
+    <%- include('./_includes/_footer.ejs') %>
+
+</body>
+
 </html>
