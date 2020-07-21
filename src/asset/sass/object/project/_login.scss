@@ -3,7 +3,6 @@
     background-image: url(/asset/image/img_login_bg.jpg);
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
 
     .p-login__inner {
         padding: 100px;
@@ -14,7 +13,6 @@
             width: 360px;
             height: 460px;
             padding: 28px;
-            position: relative;
 
             .p-login__title {
                 text-align: center;
