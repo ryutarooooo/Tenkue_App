@@ -2,10 +2,16 @@
     max-width: 1000px;
     margin: 0 auto;
 
-    // ここにCSSを書いていく
     h2 {
         text-align: center;
         margin-top: 70px;
+    }
+
+    .image,
+    .devise {
+        text-align: center;
+        flex: 1;
+        margin: 50px;
     }
 
     .btn {
@@ -27,55 +33,33 @@
         background-color: #00478B;
     }
 
-    .sea-image {
+    .sea {
         // width: 460px;
         // height: 460px;
     }
 
-    .email-image,
-    .login-image {
+    .email,
+    .login {
         width: 25px;
         height: 25px;
         position: absolute;
         top: 40%;
         left: 10px;
         margin-top: -0.5em;
-
-    }
-
-    .left-index,
-    .right-index {
-        text-align: center;
-        flex: 1;
-        margin: 50px;
     }
 
     p {
         font-size: 10px;
     }
 
+    .parent {
+        width: 100%;
+        margin-top: 150px;
 
-
-    @media screen and (min-width: 768px) {
-        .parent {
-            width: 100%;
+        @media screen and (min-width: 768px) {
             display: flex;
-            margin-top: 150px;
             margin-bottom: 150px;
-            // justify-content: center;
             justify-content: space-around;
         }
-
-
-    }
-
-    @media screen and (max-width: 767px) {
-        .parent {
-            width: 100%;
-            margin-top: 150px;
-        }
-
-
-
     }
 }
