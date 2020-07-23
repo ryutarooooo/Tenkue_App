@@ -20,7 +20,27 @@
         <main>
             <article class="p-login">
                 <div class="p-login__inner l-content-wrap-default">
-                    <!-- ここにHTMLを書いていく -->
+                    <div class="p-login__forms">
+                        <div class="p-login__title">ログイン</div>
+                        <form action="#" method="post">
+                            <div class="p-login__form-set">
+                                <label for="email" class="p-login__label">Email</label><br>
+                                <input type="text" id="email" class="p-login__input">
+                            </div>
+                            <div class="p-login__form-set">
+                                <label for="password" class="p-login__label">Password</label><br>
+                                <input type="text" id="password" class="p-login__input">
+                                <div class="p-login__checkbox-set">
+                                    <input type="checkbox" id="remember_me">
+                                    <label for="remember_me" class="p-login__label">記憶する</label>
+                                </div>
+                            </div>
+                            <input type="submit" value="登録" class="p-login__submit">
+                            <div class="p-login__privacy-policy">
+                                <span> Tenkue App に登録することにより<a href="#">利用規約</a>に同意したものとみなされます。<a href="#">プライバシーポリシー</a>を見る。</span>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </article>
 
