@@ -1,33 +1,66 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-
         <%- include('../_includes/_common.ejs') %> 
-
         <title>Tenkue Hotel</title>
-
-        <!-- OGP -->
         <%#- include('./_includes/_ogpCommon.ejs') %>
         <%#- include('./_includes/_ogpTwitter.ejs') %>
         <%#- include('./_includes/_ogpFacebook.ejs') %>
-
     </head>
 </html>
 
     <body>
         <%- include('../_includes/_header') %>
-
         <main>
             <article class="p-mv">
                 <div class="p-mv__inner l-content-wrap-default">
-                    <!-- ここにHTMLを書いていく -->
+                    <div class="Overview">
+                        <h2 class="Overview__Title">ABOUT</h2>
+                        <p class="Overview__Text">
+                            Tenkue Appはトラベラーのためのアプリです。<br>
+                            国内トラベルだけではなく、外国トラベル、国内外の家族旅行者など、<br>
+                            多くのお客様の観光拠点と旅行者をつなぐサービスを提供します。<br>
+                            宿泊期間やご人数に関わらずご利用頂け、タイトなスケジュールになりがちなご予定を出来る限りサポートできるよう、<br>
+                            チェックインやチェックアウトのお時間も相談することができます。<br>
+                            さらに、長期滞在でもお楽しみ頂けるよう、様々なアクティビティーの実施も予定しております。
+                        </p>
+                    </div>
+                    <div class="Contents">
+                        <h2 class="Contents__Title">SERVICE</h2>
+
+                        <div class="Contents__Content">
+                            <div class="Contents__Content__Flex-Left">
+                                <h3 class="Contents__Content__Flex-Left__Sub-Title">
+                                    <span class="Contents__Content__Flex-Left__Sub-Title--Number">01</span><br>全ては検索から始まる
+                                </h3>
+                                <p class="Contents__Content__Flex-Left__Text">Tenkue Appは世界最高水準のリゾートホテルとパートナーシップを結んでいます。あなたが望むリゾートはTenkue Appに登録するだけでアクセスすることができます。これが私たちの最も得意としていることです。</p>
+                            </div>
+                            <img src="../../asset/image/about_img01.jpg" class="Contents__Content__Image">
+                        </div>
+
+                        <div class="Contents__Content__Reverse">
+                            <div class="Contents__Content__Reverse__Flex-Right">
+                                <h3 class="Contents__Content__Reverse__Flex-Right__Sub-Title">
+                                    <span class="Contents__Content__Reverse__Flex-Right__Sub-Title--Number">02</span><br>優先的な予約システム
+                                </h3>
+                                <p class="Contents__Content__Reverse__Flex-Right__Text">世界中のどこよりも予約しやすいのでTenkue Appの特徴です。リゾートホテルと数多くパートナーシップを結んでいるからこそ、優先的に予約をすることが可能です。</p>
+                            </div>
+                            <img src="../../asset/image/about_img02.jpg" class="Contents__Content__Reverse__Image">
+                        </div>
+
+                        <div class="Contents__Content">
+                            <div class="Contents__Content__Flex-Left">
+                                <h3 class="Contents__Content__Flex-Left__Sub-Title">
+                                    <span class="Contents__Content__Flex-Left__Sub-Title--Number">03</span><br>充実したアクティビティ
+                                </h3>
+                                <p class="Contents__Content__Flex-Left__Text">Tenkue Appではカタログには載っていないあなただけのアクティビティを提供することができます。あなただけのオリジナリティ溢れるアクティビティを体験しましょう。</p>
+                            </div>
+                            <img src="../../asset/image/about_img03.jpg" class="Contents__Content__Image">
+                        </div>
+                    </div>
                 </div>
             </article>
-            
-
         </main>
-
         <%- include('../_includes/_footer.ejs') %>
-
     </body>
 </html>
