@@ -1,3 +1,65 @@
 .p-signup {
-    // ここにCSSを書いていく
+  // ここにCSSを書いていく
+  color: $color-light;
+  background-image: url(/asset/image/img_signup_bg.jpg);
+  background-size: cover;
+  background-position: center center;
+
+  .p-signup__inner {
+      padding: 100px;
+
+      .p-signup__forms {
+          background: rgba(2,2,2,0.7);
+          margin: 0 auto;
+          width: 360px;
+          height: 460px;
+          padding: 28px;
+
+          .p-signup__title {
+              text-align: center;
+              margin: 10px auto;
+              font-size: 28px;
+              font-weight: bold;
+          }
+
+          .p-signup__form-set {
+              margin: 20px auto;
+              
+             .p-signup__label {
+                  font-size: 14px; 
+             } 
+
+             .p-signup__input {
+                  width: 100%;
+                  height: 32px;
+                  border: none;
+                  border-radius: 4px;
+             }
+          }
+
+          .p-signup__submit {
+              width: 100%;
+              background-color: $color-orange;
+              color: $color-light;
+              height: 32px;
+              border: none;
+              border-radius: 6px;
+              cursor: pointer;
+          }
+
+          .p-signup__privacy-policy {
+              margin-top: 20px;
+              font-size: 12px;
+
+              a {
+                  font-size: 12px;
+                  color: $color-light;
+              
+              }
+              a:hover {
+                  text-decoration: underline;
+              }
+          }
+      }
+  }
 }
