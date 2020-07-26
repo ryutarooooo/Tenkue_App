@@ -11,7 +11,6 @@
             background: rgba(2,2,2,0.7);
             margin: 0 auto;
             width: 360px;
-            height: 460px;
             padding: 28px;
 
             .p-login__title {
@@ -56,6 +55,7 @@
 
             .p-login__privacy-policy {
                 margin-top: 20px;
+                margin-bottom: 10px;
                 font-size: 12px;
 
                 a {
@@ -66,6 +66,22 @@
                 a:hover {
                     text-decoration: underline;
                 }
+            }
+        }
+    }
+}
+
+// レスポンシブ: SmartPhone用
+@media (max-width: 767px) {
+    .p-login {
+
+        .p-login__inner {
+            padding: 60px;
+
+            .p-login__forms {
+                width: 94%;
+                max-width: 320px;
+                padding: 30px 4%;
             }
         }
     }
