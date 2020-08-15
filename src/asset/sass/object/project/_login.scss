@@ -1,88 +1,74 @@
 .p-login {
-    color: $color-light;
-    background-image: url(/asset/image/img_login_bg.jpg);
+    padding: 200px 0 150px;
+    background-image: url(/asset/image/login_bg.jpg);
+    background-position: center;
     background-size: cover;
-    background-position: center center;
+    background-repeat: no-repeat;
 
-    .p-login__inner {
-        padding: 100px;
+    @include sp-layout() {
+        padding: 150px 10px 75px;
+    }
 
-        .p-login__forms {
-            background: rgba(2,2,2,0.7);
-            margin: 0 auto;
-            width: 360px;
-            padding: 28px;
+    &__inner {
+        max-width: 350px;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        background-color: rgba($color-default, 0.8);
 
-            .p-login__title {
-                text-align: center;
-                margin: 10px auto;
-                font-size: 28px;
-                font-weight: bold;
-            }
-
-            .p-login__form-set {
-                margin: 20px auto;
-                
-               .p-login__label {
-                    font-size: 14px; 
-               } 
-
-               .p-login__input {
-                    width: 100%;
-                    height: 32px;
-                    border: none;
-                    border-radius: 4px;
-               }
-            }
-
-            .p-login__checkbox-set {
-                margin: 10px auto;
-
-               .p-login__label {
-                    font-size: 12px; 
-               } 
-            }
-
-            .p-login__submit {
-                width: 100%;
-                background-color: $color-orange;
-                color: $color-light;
-                height: 32px;
-                border: none;
-                border-radius: 6px;
-                cursor: pointer;
-            }
-
-            .p-login__privacy-policy {
-                margin-top: 20px;
-                margin-bottom: 10px;
-                font-size: 12px;
-
-                a {
-                    font-size: 12px;
-                    color: $color-light;
-                
-                }
-                a:hover {
-                    text-decoration: underline;
-                }
-            }
+        @include tab-layout() {
+            max-width: 350px;
         }
     }
-}
 
-// レスポンシブ: SmartPhone用
-@media (max-width: 767px) {
-    .p-login {
+    &__title {
+        margin-bottom: 1em;
+        color: $color-light;
+        text-align: center;
+    }
 
-        .p-login__inner {
-            padding: 60px;
+    &__inputWrap {
+        margin-bottom: 30px;
 
-            .p-login__forms {
-                width: 94%;
-                max-width: 320px;
-                padding: 30px 4%;
-            }
+        &:nth-last-of-type(2) {
+            margin-bottom: 10px;
         }
+    }
+
+    &__label {
+        width: 100%;
+        color: $color-light;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 0.6em;
+        border: none;
+        border-radius: 0.2em;
+        @include font-size(16);
+    }
+
+    &__checkbox {
+        color: $color-light;
+        @include font-size(14);
+    }
+
+    &__btn {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0.5em 4em;
+        color: $color-light;
+        background-color: rgba($color-orange, 1);
+        border: 1px solid #222;
+        border-radius: 0.5em;
+        appearance: none;
+        display: block;
+        cursor: pointer;
+        @include font-size(16);
+    }
+
+    &__note,
+    &__note a {
+        color: $color-light;
+        @include font-size(14);
     }
 }

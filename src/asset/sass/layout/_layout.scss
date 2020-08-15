@@ -10,6 +10,13 @@
     padding-right: 2.4% !important;
     padding-left: 2.4% !important;
 
+    @include tab-layout() {
+        max-width: 100%;
+        padding-right: 3% !important;
+        padding-left: 3% !important;
+        box-sizing: border-box !important;
+    }
+
     @include sp-layout {
         max-width: 100%;
         padding-right: 5% !important;
@@ -28,6 +35,7 @@
 /* レイアウト */
 .l-content-wrap-default {
     position: relative;
+
     max-width: 1024px;
     margin-right: auto;
     margin-left: auto;
@@ -35,10 +43,45 @@
     padding-right: 2.4% !important;
     padding-left: 2.4% !important;
 
+    @include tab-layout() {
+        max-width: 100%;
+        padding-right: 3% !important;
+        padding-left: 3% !important;
+        box-sizing: border-box !important;
+    }
+
     @include sp-layout {
         max-width: 100%;
         padding-right: 5% !important;
         padding-left: 5% !important;
         box-sizing: border-box !important;
+    }
+}
+
+.l-col2 {
+    display: flex;
+    justify-content: space-between;
+
+    @include sp-layout() {
+        flex-wrap: wrap;
+    }
+
+    &__list {
+        width: 45%;
+
+        @include sp-layout() {
+            width: 100%;
+        }
+
+        &:not(:first-child) {
+            @include sp-layout() {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    &__item {
+        width: 100%;
+        height: 100%;
     }
 }

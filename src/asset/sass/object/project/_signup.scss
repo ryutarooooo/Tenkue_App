@@ -1,128 +1,68 @@
-
-  .p-signup {
-    // ここにCSSを書いていく
-    color: $color-light;
-    background-image: url(/asset/image/img_signup_bg.jpg);
+.p-signup {
+    padding: 200px 0 150px;
+    background-image: url(/asset/image/mv.jpg);
+    background-position: center;
     background-size: cover;
-    background-position: center center;
+    background-repeat: no-repeat;
 
-    .p-signup__inner {
-        padding: 100px;
+    @include sp-layout() {
+        padding: 150px 10px 75px;
+    }
 
-        .p-signup__forms {
-            background: rgba(2,2,2,0.7);
-            margin: 0 auto;
-            width: 360px;
-            padding: 28px;
+    &__inner {
+        max-width: 350px;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        background-color: rgba($color-default, 0.8);
 
-            .p-signup__title {
-                text-align: center;
-                margin: 10px auto;
-                font-size: 28px;
-                font-weight: bold;
-            }
-
-            .p-signup__form-set {
-                margin: 20px auto;
-
-               .p-signup__label {
-                    font-size: 14px;
-               }
-
-               .p-signup__input {
-                    width: 100%;
-                    height: 32px;
-                    border: none;
-                    border-radius: 4px;
-               }
-            }
-
-            .p-signup__submit {
-                width: 100%;
-                background-color: $color-orange;
-                color: $color-light;
-                height: 32px;
-                border: none;
-                border-radius: 6px;
-                cursor: pointer;
-            }
-
-            .p-signup__privacy-policy {
-                margin-top: 20px;
-                font-size: 12px;
-
-                a {
-                    font-size: 12px;
-                    color: $color-light;
-
-                }
-                a:hover {
-                    text-decoration: underline;
-                }
-            }
+        @include tab-layout() {
+            max-width: 350px;
         }
     }
-  }
 
+    &__title {
+        margin-bottom: 1em;
+        color: $color-light;
+    }
 
-@media (max-width: 767px) {
-  .p-signup__inner {
-      padding: 5px;
+    &__inputWrap {
+        margin-bottom: 30px;
 
-      .p-signup__forms {
-          background: rgba(2,2,2,0.7);
-          margin: 0 auto;
-          width: 100%;
-          max-width: 300px;
-          height: 100%;
-          padding: 0;
+        &:last-of-type {
+            margin-bottom: 50px;
+        }
+    }
 
-          .p-signup__title {
-              text-align: left;
-              font-size: 10px;
-              font-weight: bold;
+    &__label {
+        width: 100%;
+        color: $color-light;
+    }
 
+    &__input {
+        width: 100%;
+        padding: 0.6em;
+        border: none;
+        border-radius: 0.2em;
+        @include font-size(16);
+    }
 
-          }
+    &__btn {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0.5em 4em;
+        color: $color-light;
+        background-color: rgba($color-orange, 1);
+        border: 1px solid #222;
+        border-radius: 0.5em;
+        appearance: none;
+        display: block;
+        cursor: pointer;
+        @include font-size(16);
+    }
 
-          .p-signup__form-set {
-              margin: 10px auto;
-
-             .p-signup__label {
-                  font-size: 14px;
-             }
-
-             .p-signup__input {
-                  width: 100%;
-                  height: 32px;
-                  border: none;
-                  border-radius: 4px;
-             }
-          }
-
-          .p-signup__submit {
-              width: 100%;
-              background-color: $color-orange;
-              color: $color-light;
-              height: 32px;
-              border: none;
-              border-radius: 6px;
-              cursor: pointer;
-          }
-
-          .p-signup__privacy-policy {
-              margin-top: 20px;
-              font-size: 12px;
-
-              a {
-                  font-size: 12px;
-                  color: $color-light;
-
-              }
-              a:hover {
-                  text-decoration: underline;
-              }
-          }
-      }
-  }
+    &__note,
+    &__note a {
+        color: $color-light;
+        @include font-size(14);
+    }
 }

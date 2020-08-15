@@ -1,0 +1,64 @@
+.p-mv {
+    margin: 150px 0;
+    text-align: center;
+
+    @include sp-layout() {
+        margin-bottom: 75px;
+    }
+
+    @include sp-layout() {
+        margin-top: 100px;
+    }
+
+    &__title {
+        margin-bottom: 100px;
+
+        @include sp-layout() {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__btnWrap {
+        width: 100%;
+    }
+
+    &__btn {
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 0.6em 2em;
+        display: block;
+        color: $color-light;
+        background-color: rgba($color-primary, 1);
+        position: relative;
+
+        &:before {
+            content: '';
+            width: 1.5em;
+            height: 1.5em;
+            background-image: url(/asset/image/email.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 1em;
+            transform: translateY(-50%);
+        }
+
+        &--secondary {
+            color: $color-default;
+            background-color: transparent;
+            border: 1px solid $color-border;
+
+            &:before {
+                background-image: url(/asset/image/login.svg);
+            }
+        }
+    }
+
+    &__note,
+    &__note a {
+        @include font-size(14);
+    }
+}

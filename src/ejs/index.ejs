@@ -1,55 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
-<meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
+    <head>
 
-<head>
+        <%- include('./_includes/_common.ejs') %> 
 
-    <%- include('./_includes/_common.ejs') %>
+        <title>Tenkue App</title>
 
-    <title>Tenkue Hotel</title>
-
-    <!-- OGP -->
-    <%#- include('./_includes/_ogpCommon.ejs') %>
-    <%#- include('./_includes/_ogpTwitter.ejs') %>
-    <%#- include('./_includes/_ogpFacebook.ejs') %>
-
-</head>
-
+    </head>
 </html>
 
-<body>
-    <%- include('./_includes/_header') %>
+    <body>
+        <%- include('./_includes/_header') %>
 
-    <main>
+        <main>
+            <%- include('./_pages/_mainVisual') %>
 
-        <article class="p-home">
-            <div class="p-home__inner l-content-wrap-default">
-                <!-- ここにHTMLを書いていく -->
-                <h2>トラベラーのためのNo.1アプリ</h2>
-            </div>
-            <div class="parent">
-                <div class="image">
-                    <img src="/asset/image/img_home.jpg" alt="logo" decoding="async" class="sea">
-                </div>
-                <div class="devise">
-                    <a href="signup">
-                        <btn class=" btn btn-new"><img src="/asset/image/email.svg" alt="logo" decoding="async"
-                                class="email">新規登録</btn>
-                    </a>
-                    <a href="login">
-                        <btn class="btn btn-login"> <img src="/asset/image/login.svg" alt="logo" decoding="async"
-                                class="login">ログイン</btn>
-                    </a>
+        </main>
 
-                    <p>Tenkue App に登録することにより<a href="#">利用条約</a> に同意したものとみなされま<br>す。<a href="#">プライバシーポリシー</a>を見る。
-                    </p>
-                </div>
-            </div>
-        </article>
-    </main>
+        <%- include('./_includes/_footer.ejs') %>
 
-    <%- include('./_includes/_footer.ejs') %>
-
-</body>
-
+    </body>
 </html>
